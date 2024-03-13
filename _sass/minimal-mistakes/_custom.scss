@@ -3,14 +3,37 @@
 /* Landing Page Background */
 .image-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .image-column {
-  flex: 1;
+  flex: 1 1 50%;
+  max-width: 50%;
+  position: relative;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .image-column {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+}
+
+.image-column::before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+}
+
+.image-column img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: fill;
 }
 
 .image-column:last-child {
@@ -28,8 +51,13 @@
 /* Call to Action */
 
 .image-overlay {
-  margin-top: 12rem;
-  margin-left: 8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  text-align: left;
+  color: #FFFFFF;
 }
 
 .cta-head,
