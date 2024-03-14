@@ -1,0 +1,24 @@
+<div style="width: 100%; overflow: hidden;">
+  <img src="/assets/img/background/Slide 16x9 - 33.png" style="width: 100%;" alt="Shop Background">
+</div>
+
+<h2>Welcome to Our Shop</h2>
+
+<h3>Featured Products</h3>
+
+<div class="product-list">
+  {% if site.products.size > 0 %}
+  {% for product in site.products linit: 3 %}
+  {% include product.html product=product %}
+  {% endfor %}
+  {% else %}
+  <p>There are no products in the shop yet.</p>
+  {% endif %}
+</div>
+
+<h3>Categories</h3>
+<ul>
+  <li><a href="#">Category 1</a></li>
+  <li><a href="#">Category 2</a></li>
+  <li><a href="#">Category 3</a></li>
+</ul>
