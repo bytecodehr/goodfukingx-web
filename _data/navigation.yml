@@ -1,14 +1,14 @@
 # main links
 main:
   - title: Home
-    url: /views/home/
+    url: /
   - title: Shop
     url: /shop/
   - title: About
-    url: /views/about/
+    url: /about/
   - title: Blog
     url: /blog/
   - title: Contact
-    url: /views/contact/
+    url: /contact/
   - title: Pages
     url: /pages/
