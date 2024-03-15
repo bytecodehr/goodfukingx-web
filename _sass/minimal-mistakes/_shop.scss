@@ -1,0 +1,147 @@
+/* Product List Section */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(8, 8, 8, 0.1);
+}
+
+.product img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product h3 {
+  font-size: 16px;
+  color: #080808;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #4E4F54;
+  margin-bottom: 10px;
+}
+
+.product strong {
+  font-weight: bold;
+}
+
+.product .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3A3FD8;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.product .btn:hover {
+  background-color: #2E3191;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .product {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    width: calc(100% - 20px);
+  }
+}
+
+/* Categories Section*/
+.categories {
+  margin-top: 30px;
+}
+
+.categories h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categories li {
+  margin-bottom: 10px;
+}
+
+.categories a {
+  text-decoration: none;
+  color: #080808;
+  font-size: 16px;
+  transition: color 0.3 ease;
+}
+
+.categories a:hover {
+  color: #3A3FD8;
+}
+
+/* Social Sharing Section */
+.social-sharing {
+  margin-top: 30px;
+}
+
+.social-sharing h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-sharing ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-sharing li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-sharing li:last-child {
+  margin-right: 0;
+}
+
+.social-sharing a {
+  display: inline-block;
+  padding: 4px 7px;
+  background-color: #e0e0e0;
+  color: #3A3FD8;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.social-sharing a:hover {
+  background-color: #2E3191;
+  color: #e0e0e0;
+}
